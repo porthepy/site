@@ -1,152 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Davi Santos de Oliveira</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio • Davi Oliveira</title>
+
+    <meta name="theme-color" content="#0d0d12">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Davi Santos de Oliveira</h1>
 
-    <nav> <!-- sessão de navegação do site -->
-      <ul></ul> <!--  lista não ordenada para links do menu-->
-      <li><a href="#sobre">Sobre mim</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <!--<li></li> -->
-    </nav>
+    <div class="background-grid"></div>
 
-  </header>
+    <header class="hero">
 
-  <section id="sobre">
-    <h2>Sobre mim</h2>
+        <nav class="navbar">
 
-    <img src="image.png" alt="" width="225" height="225" title="Imagem de perfil de Davi">
+            <h2 class="logo">Davi.</h2>
 
-    <article>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
 
-      <p>
-        Olá, meu nome é Davi, sou um desenvolvidor web iniciante, apaixonado por tecnologia e programação. Tenho 14 anos e estou sempre buscando aprender novas habilidades e aprimorar meus conhecimentos na área de desenvolvimento web. Meu objetivo é criar soluções inovadoras e eficientes para os desafios do mundo digital.
-      </p>
+        </nav>
 
-    </article>
+        <main class="hero-content">
 
-    <aside>
+            <div class="badge">
+                Desenvolvedor Front-End
+            </div>
 
-      <h3>Habilidades</h3>
+            <h1>
+                Criando experiências<br>
+                digitais modernas,<br>
+                minimalistas e funcionais.
+            </h1>
 
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
+            <p>
+                Estudante de desenvolvimento web apaixonado por design,
+                interfaces modernas e experiências digitais elegantes
+                utilizando HTML, CSS, JavaScript e Python.
+            </p>
 
-    </aside>
-  </section>
+            <div class="buttons">
 
-  <section id="projetos">
-    <h2>Projetos</h2>
+                <a href="#projects">
+                    <button class="primary-btn">
+                        Ver Projetos
+                    </button>
+                </a>
 
-    <article>
-      <h3>Portifólio</h3>
-      <p>Este foi o primeiro site que desenvolvi, estudando front-end</p>
-    </article>
+                <a href="#contact">
+                    <button class="secondary-btn">
+                        Entrar em Contato
+                    </button>
+                </a>
 
-    <article>
-      <h3>Projeto 2</h3>
-      <p>Descrição do projeto 2...</p>
-    </article>
+            </div>
 
-  </section>
+        </main>
 
-  <section id="habilidades">
+    </header>
 
-    <h2>Habilidades e Tecnologias</h2>
-    <table>
-       
-      <thead>
-        <tr>
-            <th>Tecnologias </th>
-            <th>Nível </th>
-            <th>Descrição </th>
-        </tr>
-      </thead>
+    <!-- SOBRE -->
 
-      <tbody>
-        <tr>
-            <td>HTML</td>
-            <td>Iniciante</td>
-            <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>Intermediário</td>
-            <td>Experiência com flexbox, grid e animações CSS.</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Básico</td>
-            <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-        </tr>
-      </tbody>
+    <section class="about-section" id="about">
 
-    </table>
+        <div class="section-title">
+            <span></span>
+            <h2>Sobre mim</h2>
+        </div>
 
-  </section>
-  
-  <footer>
-    <p>Direitos autorais &copy; 2023 Davi Santos de Oliveira</p>
+        <p class="about-text">
+            Sou uma pessoa criativa, curiosa e sempre disposta a aprender coisas novas,
+            principalmente quando envolve tecnologia, design e desenvolvimento.
+            Atualmente estudo programação e desenvolvimento web, buscando evoluir
+            constantemente minhas habilidades e transformar ideias em projetos cada vez mais completos.
+            Tenho experiência com HTML, CSS, JavaScript, Java e Python, com maior afinidade
+            em front-end, criação de interfaces modernas e organização visual de projetos.<br><br>
 
-    <section id="contato">
+            Gosto de criar sites que tenham identidade própria, equilíbrio entre estética
+            e funcionalidade e uma experiência agradável para quem utiliza. Também tenho
+            bastante interesse por design e pela parte visual dos projetos, algo que considero
+            tão importante quanto o código em si.<br><br>
 
-      <h2>Contato</h2>
-
-      <p>Tem um projeto em mente? Entre em contato!</p>
-
-      <form action="">
-
-        <label for="nome">Nome: </label>
-        <input type="text" id="nome" name="nome" required> <br>
-
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required> <br>
-
-        <label for="telefone">Telefone: </label>
-        <input type="tel" id="telefone" name="telefone"> <br>
-
-        <label for="assunto">Assunto: </label>
-        <select name="assunto" id="assunto">
-          <option value="orcamento">Orçamento</option>
-          <option value="duvida">Dúvida</option>
-          <option value="outros">Outros</option>
-          <select>
-
-            <br>
-
-            <label for="mensagem">Mensagem: </label> <br>
-            <textarea id="mensagem" name="mensagem" cols="30" rows="5" required></textarea> <br>
-
-            <br>
-
-            <label for="data">Qual a data que você gostaria de agendar? <br>
-              <input type="date" id="data" name="data">
-              <br>
-
-              <input type="checkbox" id="inscricao" name="inscricao">
-              <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
-
-              <br>
-
-              <input type="submit" value="Enviar Mensagem">
-
-
-      </form>
+            Meu objetivo é continuar evoluindo como desenvolvedor, aprender novas tecnologias,
+            ganhar experiência profissional e futuramente trabalhar internacionalmente enquanto
+            desenvolvo projetos próprios que unam tecnologia, criatividade e design.
+        </p>
 
     </section>
-  </footer>
+
+    <!-- SKILLS -->
+
+    <section class="skills-section" id="skills">
+
+        <div class="section-title">
+            <span></span>
+            <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Estruturação moderna, semântica e organizada.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Interfaces modernas, responsivas e minimalistas.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Interatividade e experiências mais dinâmicas.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Lógica, automação e desenvolvimento geral.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>Aprendizado de programação orientada a objetos.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJETOS -->
+
+    <section class="projects-section" id="projects">
+
+        <div class="section-title">
+            <span></span>
+            <h2>Projetos</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Landing Page Moderna</h3>
+
+                <p>
+                    Projeto focado em design minimalista,
+                    responsividade e experiência visual moderna.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>UI Concept</h3>
+
+                <p>
+                    Interface criada com foco em organização,
+                    identidade visual e estética futurista.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Site Responsivo</h3>
+
+                <p>
+                    Desenvolvimento de layouts adaptáveis para
+                    desktop, tablet e dispositivos móveis.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="section-title">
+            <span></span>
+            <h2>Contato</h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>davisantosoliveira.sc@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Telefone</h3>
+                <p>+55 (48) 99607-3175</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Davi Oliveira. Designed & developed by me.
+        </p>
+
+    </footer>
+
 </body>
 
 </html>
